@@ -2908,6 +2908,9 @@ textarea:focus {
 .stack-box .stack-item.stack-item-06 {
   z-index: -99;
 }
+.stack-box .stack-item.stack-item-07 {
+  z-index: -999;
+}
 .stack-box .stack-item .stack-item-wrapper {
   position: absolute;
   top: 0;
