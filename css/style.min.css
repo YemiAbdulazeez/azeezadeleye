@@ -2911,6 +2911,15 @@ textarea:focus {
 .stack-box .stack-item.stack-item-07 {
   z-index: -999;
 }
+.stack-box .stack-item.stack-item-08 {
+  z-index: -9999;
+}
+.stack-box .stack-item.stack-item-09 {
+  z-index: -99999;
+}
+.stack-box .stack-item.stack-item-10 {
+  z-index: -999999;
+}
 .stack-box .stack-item .stack-item-wrapper {
   position: absolute;
   top: 0;
