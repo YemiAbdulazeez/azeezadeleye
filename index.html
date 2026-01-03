@@ -1,1682 +1,2171 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <!--<![endif]-->
+
   <head>
-    <title>
-      Abdul-Azeez O. Adeleye | Senior Fullstack SWE - SaaS, Web Apps and Web3
-    </title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Abdul-Azeez O. Adeleye" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Abdul-Azeez Adeleye - Senior Software Engineer Portfolio</title>
+    <meta name="author" content="Abdul-Azeez Adeleye" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta
       name="description"
-      content="Abdul-Azeez O. Adeleye | Senior Fullstack SWE - SaaS, Web Apps and Web3"
+      content="Senior Software Engineer & Tech Lead with 5+ years of experience architecting end-to-end systems for Fintech, SaaS, and Government sectors. Expert in scaling products from 0 to 1, driving ₦500M+ in value for 520k+ users."
     />
-    <!-- favicon icon -->
-    <link rel="icon" href="images/logo-light.png" sizes="32x32" />
-    <link rel="icon" href="images/logo-light.png" sizes="192x192" />
-    <!-- google fonts preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- style sheets and font icons  -->
-    <link rel="stylesheet" href="css/vendors.min.css" />
-    <link rel="stylesheet" href="css/icon.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/responsive.min.css" />
 
-    <link rel="stylesheet" href="css/custom-azeez.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/fonts/inter/inter.css" />
+    <link rel="stylesheet" href="assets/icon/icomoon/style.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/images/logo/favicon.svg"
+    />
   </head>
 
-  <body
-    data-mobile-nav-style="full-screen-menu"
-    data-mobile-nav-bg-color="#2d2c2b"
-    class="custom-cursor"
-  >
-    <!-- start cursor -->
-    <div class="cursor-page-inner">
-      <div class="circle-cursor circle-cursor-inner"></div>
-      <div class="circle-cursor circle-cursor-outer"></div>
-    </div>
-    <!-- end cursor -->
-    <!-- start header -->
+  <body class="counter-scroll">
+    <!-- <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas> -->
 
-    <header>
-      <!-- start navigation -->
-      <nav
-        class="navbar navbar-expand-lg bg-transparent header-reverse glass-effect"
-      >
-        <div class="container-fluid bg-transparent">
-          <div class="col-auto">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="images/logo.png"
-                data-at2x="images/logo.png"
-                alt=""
-                class="default-logo"
-              />
-              <img
-                src="images/logo.png"
-                data-at2x="images/logo.png"
-                alt=""
-                class="alt-logo"
-              />
-              <img
-                src="images/logo.png"
-                data-at2x="images/logo.png"
-                alt=""
-                class="mobile-logo"
-              />
-            </a>
-          </div>
-          <div class="col-auto menu-order">
-            <button
-              class="navbar-toggler float-start"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-line"></span>
-              <span class="navbar-toggler-line"></span>
-              <span class="navbar-toggler-line"></span>
-              <span class="navbar-toggler-line"></span>
+    <!-- Preload -->
+    <div class="preload preload-container" id="preload">
+      <div class="preload-logo">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <!-- /Preload -->
+
+    <!-- Body Background -->
+    <div class="body-background">
+      <div class="bg-item">
+        <a href="#home">
+          <img
+            loading="lazy"
+            width="1440"
+            height="900"
+            src="assets/images/item/cloud-bg.png"
+            alt="Cloud Background"
+          />
+        </a>
+      </div>
+      <div class="bg-video video-dark">
+        <a href="#home">
+          <video class="video" muted="" autoplay="" loop="" playsinline="">
+            <source src="assets/images/overlay-2.mp4" type="video/mp4" />
+          </video>
+        </a>
+        <div class="overlay-1"></div>
+      </div>
+    </div>
+    <!-- /Body Background -->
+    <!-- Btn Open Color -->
+    <div class="tf-left-bar pst-v2">
+      <a
+        class="btn-setting-color tf-btn-icon style-2"
+        data-bs-toggle="offcanvas"
+        href="#settingColorMenu"
+        ><i class="icon-gear"></i
+      ></a>
+    </div>
+    <!-- /Btn Open Color -->
+    <!-- Setting Color -->
+    <div class="offcanvas offcanvas-end offcanvas-color" id="settingColorMenu">
+      <div class="offcanvas-content">
+        <div class="canvas-header">
+          <h5 class="letter-space--2">Configuration</h5>
+          <span class="icon-close-popup" data-bs-dismiss="offcanvas">
+            <i class="icon-close"></i>
+          </span>
+        </div>
+        <div class="canvas-body">
+          <h6 class="title">Color</h6>
+          <div class="settings-color list-choose">
+            <button type="button" class="btn-color theme-light choose-item">
+              <span class="color type-body-v1"></span>
+              <span class="text"> Silver Dawn </span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav d-lg-none alt-font">
-                <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-auto ms-auto d-none d-lg-flex">
-              <div class="header-icon">
-                <div class="header-button ms-25px">
-                  <a
-                    href="#contact"
-                    class="btn border-1 btn-gradient-fuel-yellow-blue btn-large left-icon btn-switch-text"
-                  >
-                    <span>
-                      <span><i class="fa-regular fa-envelope"></i></span>
-                      <span class="btn-double-text" data-text="Send a message"
-                        >Let's work together</span
-                      >
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- end header -->
-    <!-- start banner -->
-    <section
-      class="p-0 ipad-top-space-margin position-relative overflow-hidden sm-h-auto "
-    >
-      <div class="container-fluid p-0  position-relative">
-        <div class="row g-0">
-          <div
-            class="col-12 col-md-7 bg-sliding-line d-flex justify-content-center flex-column p-8 position-relative xl-p-6 md-p-6 sm-ps-30px sm-pe-30px sm-pt-50px sm-pb-50px order-1 order-md-1"
-          >
-            <div
-              class="fs-80 sm-fs-60 lh-80 fw-600 text-dark-gray mb-40px sm-mb-30px alt-font ls-minus-6px sm-ls-minus-2px"
-              data-anime='{ "el": "childs", "translateX": [80, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
-            >
-           I build <br /><span class="text-gradient-base-color">problem-solving </span><br />
-            
-             solutions that turn <br /><span class="text-gradient-base-color"
-              >users into loyal </span> <br /> customers and features into <br /><span class="text-gradient-base-color"
-                >more profit </span
-              > 
-            </div>
-            <div
-              class="fs-18 sm-fs-16 text-dark-gray mb-20px w-70 xxl-w-100 lg-w-100 sm-w-90 d-block"
-              data-anime='{ "el": "childs", "translateX": [110, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
-            >
-              <span class="d-inline-block"
-                >Hello there👋, I'm Abdul-Azeez O. Adeleye, A Senior Full Stack
-                Software Engineer - Saas & Web Apps
-              </span>
-            </div>
-
-            <div
-              class="icon-with-text-style-08"
-              data-anime='{ "el": "childs", "translateX": [140, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
-            >
-              <div class="feature-box feature-box-left-icon-middle">
-                <div
-                  class="feature-box-icon feature-box-icon-rounded w-55px h-55px rounded-circle bg-dark-gray me-15px rounded-box"
-                >
-                  <i
-                    class="feather icon-feather-arrow-right text-base-color icon-small"
-                  ></i>
-                </div>
-                <div class="feature-box-content">
-                  <a
-                    href="#about"
-                    class="d-inline-block fs-18 sm-fs-16 ls-minus-05px alt-font fw-600 text-dark-gray"
-                    >About</a
-                  >
-                  |
-                  <a
-                    href="#experience"
-                    class="d-inline-block fs-18 sm-fs-16 0 ls-minus-05px alt-font fw-600 text-dark-gray"
-                    >Experience</a
-                  >
-                  |
-                  <a
-                    href="#projects"
-                    class="d-inline-block fs-18 sm-fs-16 0 ls-minus-05px alt-font fw-600 text-dark-gray r"
-                    >Projects
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-12 col-md-5 position-relative order-2 order-md-2 glass-effect"
-          >
-            <div
-              class="position-absolute left-0px bottom-0px bg-white z-index-9 p-35px md-p-40px w-200px d-md-block"
-            >
-              <div class="fancy-text-style-3 mt-10px mb-20px">
-                <a href="#projects"
-                  ><div
-                    class="position-absolute right-30px top-30px feature-box-icon feature-box-icon-rounded w-25px h-25px me-15px rounded-circle bg-light-gray"
-                  >
-                    <i
-                      class="feather icon-feather-arrow-up-right icon-extra-small text-white"
-                    ></i>
-                  </div>
-
-                  <h4
-                    class="lh-40 alt-font text-dark-gray fw-600 fs-20 ls-minus-2px image-mask cover-background mb-0"
-                    style="background-image: url('images/text-image.jpg')"
-                  >
-                    Explore Projects
-                  </h4>
-                </a>
-              </div>
-            </div>
-            <div
-              class="swiper"
-              data-slider-options='{ "slidesPerView": "1", "spaceBetween":3.5, "centeredSlides": true, "speed": 8000, "loop": true, "allowTouchMove": false, "autoplay": { "delay":1, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView":1 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 }, "575": { "slidesPerView": 2 } }, "effect": "slide" }'
-            >
-              <div class="swiper-wrapper marquee-slide">
-                <div class="swiper-slide">
-                  <a href="https://dimpified.com" target="_blank"
-                    ><img class="w-100" src="images/dimp-p-slide.png" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="https://ned.gov.ng" target="_blank"
-                    ><img class="w-100" src="images/nerd-slide.png" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="https://dimpified.com/m" target="_blank"
-                    ><img class="w-100" src="images/dimp-m-slide.png" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="https://gfa-tech.com" target="_blank"
-                    ><img class="w-100" src="images/gfa-slide.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    href="https://dimpified.com/templates/barber-mordern"
-                    target="_blank"
-                    ><img class="w-100" src="images/barber-slide.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="https://dimpified.com/barbers" target="_blank"
-                    ><img class="w-100" src="images/dimp-slide.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="https://eunikclothings.com/" target="_blank"
-                    ><img class="w-100" src="images/eunik-slide.jpg" alt=""
-                  /></a>
-                </div>
-
-                <div class="swiper-slide">
-                  <a
-                    href="https://gfa-tech.com/osun-upskill-program/"
-                    target="_blank"
-                    ><img class="w-100" src="images/osun-slide.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="https://signature.nora.ci" target="_blank"
-                    ><img class="w-100" src="images/signature.jpg" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
+            <button type="button" class="btn-color theme-light choose-item">
+              <span class="color type-body-v2"></span>
+              <span class="text"> Lavender Stone </span>
+            </button>
+            <button type="button" class="btn-color theme-light choose-item">
+              <span class="color type-body-v3"></span>
+              <span class="text"> Ocean Brezee </span>
+            </button>
+            <button type="button" class="btn-color theme-dark choose-item">
+              <span class="color type-dark-v1"></span>
+              <span class="text"> Midnight Fade </span>
+            </button>
+            <button type="button" class="btn-color theme-dark choose-item">
+              <span class="color type-dark-v2"></span>
+              <span class="text"> Charcoal Mist </span>
+            </button>
+            <button type="button" class="btn-color theme-dark choose-item">
+              <span class="color type-dark-v3"></span>
+              <span class="text"> Forest Shadow </span>
+            </button>
           </div>
         </div>
       </div>
-    </section>
-
-    <section
-      class="bg-dark-gray  background-position-center-top overflow-hidden"
-      style="
-        background-image: url('images/demo-architecture-dotted-pattern.svg');
-      "
-    >
-      <div class="container">
-        <div class="row align-items-center mb-5 sm-mb-30px">
-          <div
-            class="col-lg-4 md-mb-50px sm-mb-40px text-center text-sm-start appear anime-complete"
-            data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
-            style=""
-          >
-            <img
-              src="images/demo-architecture-signechar.png"
-              alt=""
-              data-no-retina=""
-            />
-            <h4 class="text-white fw-600 mt-20px mb-0 w-90 lg-w-100">
-              Let's walk back a few years...
-            </h4>
-            <p class="w-90 lg-w-100">
-              Back in 2013, I decided to try my hand at creating my own game,
-              music and video download website with Wapka and then moved to
-              using HTML, CSS and PHP. This led me to save my entire lunch
-              stipend to buy internet unit in a cyber cafe after school.
-              Fast-forward to today, and I’ve had the privilege of building
-              software for a fashion company and I'm currently working with a
-              B2B SaaS Start-Up.
-            </p>
-          </div>
-          <div class="col-lg-8 last-paragraph-no-margin">
-            <div class="row align-items-center">
-              <div
-                class="col-xl-4 col-lg-5 col-sm-4 position-relative atropos transform-3d xs-mb-15px text-center text-sm-start text-lg-center appear anime-complete"
-                data-anime='{ "translateY": [-15, 0], "scale": [0.8, 1], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
-                style=""
-              >
-                <div
-                  class="atropos d-inline-block atropos-rotate-touch"
-                  data-atropos=""
-                  data-atropos-perspective="500"
-                >
-                  <div class="atropos-scale">
-                    <div class="atropos-rotate">
-                      <div class="atropos-inner text-center">
-                        <div
-                          data-atropos-offset="-5"
-                          class="position-relative left-0px right-0px top-50px lg-top-30px md-top-40px"
-                        >
-                          <span
-                            class="fs-180 lg-fs-130 md-fs-150 text-dark-gray alt-font fw-700 position-absolute left-0px w-100 ls-minus-3px"
-                            >6 years</span
-                          >
-                        </div>
-                        <span
-                          class="w-210px h-210px lg-w-150px lg-h-150px md-w-170px md-h-170px sm-w-150px sm-h-150px rounded-circle d-inline-block bg-base-color"
-                        ></span>
-                        <span
-                          class="atropos-highlight"
-                          style="transform: translate3d(0px, 0px, 0px)"
-                        ></span>
-                      </div>
-                      <span
-                        class="atropos-shadow"
-                        style="transform: translate3d(0px, 0px, -50px) scale(1)"
-                      ></span>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xl-8 col-lg-7 col-sm-8 text-center text-sm-start appear anime-complete"
-                data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
-                style=""
-              >
-                <span
-                  class="fs-14 text-uppercase ls-1px text-white fw-600 d-block mb-5px"
-                  >What I do now</span
-                >
-                <p class="w-90 lg-w-100 pb-10">
-                  My main focus these days is building products tailored towards
-                  client needs. I most
-                  enjoy building software in the sweet spot where design and
-                  engineering meet — things that look good but are also built
-                  well under the hood. In my free time, I love teaching people
-                  whatever knowledge I've acquired whilst learning from them
-                  also. When I’m not on the computer, I’m usually watching
-                  anime, reading, or hanging out with family and friends
-                </p>
-                <a
-              href="resume.pdf"
-              class="btn btn-medium btn-gradient-fuel-yellow-blue  btn-switch-text btn-box-shadow border-1 left-icon me-10px sm-mb-15px sm-mt-15px"
-            >
-              <span>
-                <span><i class="feather icon-feather-briefcase"></i></span>
-                <span class="btn-double-text" data-text="View Resume"
-                  >View Resume</span
-                >
-              </span>
-            </a>
-            <a
-              href="#contact"
-              class="btn btn-medium btn-dark-gray  border-1 btn-switch-text left-icon sm-mb-15px sm-mt-15px"
-            >
-              <span>
-                <span><i class="feather icon-feather-phone"></i></span>
-                <span class="btn-double-text" data-text="Contact Me"
-                  >Contact Me</span
-                >
-              </span>
-            </a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-       
-      </div>
-      <div class="container ">
-        <div
-          class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-0 px-6"
-          data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
-        >
-          <!-- start process step item -->
-          <div
-            class="col process-step-style-06 last-paragraph-no-margin hover-box sm-mb-50px"
-          >
-            <div class="process-step-icon-box position-relative top-minus-14px">
-              <span
-                class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"
-              ></span>
-              <div
-                class="step-box d-flex align-items-center justify-content-center bg-white border-radius-100 w-25px h-25px position-relative border border-color-extra-medium-gray box-shadow-large"
-              >
-                <span class="w-7px h-7px bg-dark-gray border-radius-100"></span>
-              </div>
-            </div>
-            <span
-              class="d-block alt-font text-white fw-600 mb-10px mt-15px fs-18 lh-28 ls-minus-05px w-90 md-w-100"
-              >Lead, Product Development & Design</span
-            >
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">Dimpified, 2024</p>
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              Led the development of industry-specific tools, seamless booking
-              and feature integrations, and visually appealing templates,
-              enhancing functionality for various customer categories.
-              Prioritized customer feedback to iterate and rapidly release new
-              features, ensuring continuous improvement and market alignment.
-            </p>
-            <div class="col-lg-auto col-12 mb-35px">
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px"
-                >React JS</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >Node JS</span
-              >
-
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >Mongo DB</span
-              >
-
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >JavaScript</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Tailwind</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                MySQL</span
-              >
-
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Postman</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Microsoft Azure</span
-              >
-            </div>
-          </div>
-          <div
-            class="col process-step-style-06 last-paragraph-no-margin hover-box sm-mb-50px"
-          >
-            <div class="process-step-icon-box position-relative top-minus-14px">
-              <span
-                class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"
-              ></span>
-              <div
-                class="step-box d-flex align-items-center justify-content-center bg-white border-radius-100 w-25px h-25px position-relative border border-color-extra-medium-gray box-shadow-large"
-              >
-                <span class="w-7px h-7px bg-dark-gray border-radius-100"></span>
-              </div>
-            </div>
-            <span
-              class="d-block alt-font text-white fw-600 mb-10px mt-15px fs-18 lh-28 ls-minus-05px w-90 lg-w-90 md-w-100"
-              >Senior Software Engineer - <br />Frontend, Design and
-              Testing</span
-            >
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              GFA TECHNOLOGIES
-            </p>
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              Led a team of UI/UX, Frontend and QA Engineers to design, develop
-              and test the first two iterations of the Dimpified ecosystem
-              platform which include compelling landing pages, dashboards,
-              booking interface and editable website templates.
-            </p>
-            <div class="col-lg-auto col-12 mb-35px">
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px"
-                >React JS</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >Node JS</span
-              >
-
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >Tailwind CSS</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >HTML & SCSS</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >JavaScript</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Bootstrap</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                PHP</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Figma</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Postman</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Selenium</span
-              >
-            </div>
-          </div>
-          <!-- end process step item -->
-          <!-- start process step item -->
-
-          <div
-            class="col process-step-style-06 last-paragraph-no-margin hover-box sm-mb-50px"
-          >
-            <div class="process-step-icon-box position-relative top-minus-14px">
-              <span
-                class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"
-              ></span>
-              <div
-                class="step-box d-flex align-items-center justify-content-center bg-white border-radius-100 w-25px h-25px position-relative border border-color-extra-medium-gray box-shadow-large"
-              >
-                <span class="w-7px h-7px bg-dark-gray border-radius-100"></span>
-              </div>
-            </div>
-            <span
-              class="d-block alt-font text-white fw-600 mb-10px mt-15px fs-18 lh-28 ls-minus-05px w-90 md-w-100"
-              >Engineering Associate</span
-            >
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              GFA TECHNOLOGIES
-            </p>
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              Crafted a series of compelling Landing Pages showcasing the
-              company's products, services, and solutions, contributing to
-              heightened visibility and engagement and attracting 3 huge
-              corporate projects from banks and government.
-            </p>
-            <div class="col-lg-auto col-12 mb-35px">
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >HTML & CSS3</span
-              >
-
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >JavaScript</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Bootstrap</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                PHP</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Wordpress</span
-              >
-            </div>
-          </div>
-
-          <!-- end process step item -->
-          <div
-            class="col process-step-style-06 last-paragraph-no-margin hover-box"
-          >
-            <div class="process-step-icon-box position-relative top-minus-14px">
-              <span
-                class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"
-              ></span>
-              <div
-                class="step-box d-flex align-items-center justify-content-center bg-white border-radius-100 w-25px h-25px position-relative border border-color-extra-medium-gray box-shadow-large"
-              >
-                <span class="w-7px h-7px bg-dark-gray border-radius-100"></span>
-              </div>
-            </div>
-            <span
-              class="d-block alt-font text-white fw-600 mb-10px mt-15px fs-18 lh-28 ls-minus-05px w-90 md-w-100"
-              >Frontend Developer - Contract
-            </span>
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              EUNIK NIGERIA
-            </p>
-            <p class="fs-14 text-white w-90 md-w-100 sm-w-100">
-              Developed the first and second iteration of the Eunik Clothing
-              Website utilizing Bootstrap, Javascript, and HTML, facilitating a
-              visually engaging digital platform for showcasing fashion products
-              and services to prospective customers.
-            </p>
-            <div class="col-lg-auto col-12 mb-35px">
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >HTML & CSS3</span
-              >
-
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-                >JavaScript</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                Bootstrap</span
-              >
-              <span
-                class="d-inline-flex text-white btn-gradient-fuel-yellow-blue text-uppercase alt-font fs-11 lh-26 fw-700 border-radius-40px ps-15px pe-15px ms-5px"
-              >
-                PHP</span
-              >
-            </div>
-          </div>
-          <!-- end process step item -->
-        </div>
-      </div>
-    </section>
-    <!-- end section -->
-    <!-- start section -->
-
-    <!-- end banner -->
-    <!-- start section -->
-   
-
-   
-
-    <section class="pb-0 overflow-hidden position-relative">
-      <div class="container">
-        <div class="row align-items-center mb-5">
-          <div class="col-xl-5 lg-mb-30px text-center text-xl-start">
-            <h2 class="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">
-              Featured Projects
-            </h2>
-          </div>
-          <div class="col-xl-7 tab-style-04 text-center text-xl-end">
-            <!-- filter navigation -->
-            <ul
-              class="portfolio-filter nav nav-tabs justify-content-center justify-content-xl-end border-0"
-            >
-              <!-- <li class="nav active">
-                <a data-filter="*" href="#">View Projects Archive</a>
-              </li> -->
-
-              <!-- end filter navigation -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="stack-box py-0 z-index-99">
-      <div class="stack-box-contain" id="projects">
-        <!-- start stack item -->
-        <div class="stack-item stack-item-01 bg-linen lg-pt-8 lg-pb-8 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/dimp-sq.png)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    01
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Development and Engineering</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray alt-font fw-600 fs-50 ls-minus-4px mb-25px"
-                  >
-                    Dimpified - Personal Care Booking WebApp
-                  </h1>
-
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-15px">
-                    Spearheaded the development of the entire customer focused
-                    user interface, integrating APIs and engineering complex
-                    logical frontend components to careful display tailored
-                    recommenndations.
-                  </p>
-
-                  <a
-                    href="https://dimpified.com"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="stack-item stack-item-02 bg-linen lg-pt-8 lg-pb-8 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/nerd-sq.png)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    02
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >SOLE DESIGN AND DEVELOPMENT</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray alt-font fw-600 fs-50 ls-minus-4px mb-25px"
-                  >
-                    Nigeria Education Repository and Databank (NERD)
-                  </h1>
-
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-15px">
-                    Independently crafted the website user interface with no
-                    design files provided, developing the entire goverment
-                    website with just information provided in a word document.
-                  </p>
-
-                  <a
-                    href="https://ned.gov.ng"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="stack-item stack-item-03 bg-linen lg-pt-8 lg-pb-8 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/dimp-m-sq.png)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    03
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Flow Design and Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray alt-font fw-600 fs-50 ls-minus-4px mb-25px"
-                  >
-                    Dimpified For Merchants
-                  </h1>
-
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-15px">
-                    Led a team of Frontend developers, UI/UX designers, and QA
-                    engineers to design, build, and test the multiple iterations
-                    of the Dimpified ecosystem platform, featuring engaging
-                    landing pages, interactive dashboards, a booking interface
-                    and payment integrations.
-                  </p>
-
-                  <a
-                    href="https://dimpified.com/merchants"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-        <!-- start stack item -->
-        <div class="stack-item stack-item-04 bg-linen md-pt-0 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/qrcode-project.png)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    04
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Design and Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray alt-font fw-600 fs-50 ls-minus-4px mb-25px"
-                  >
-                    QR Code Generator - Fast and Free
-                  </h1>
-
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-15px">
-                    A clean, intuitive interface makes generating QR codes
-                    effortless. QR codes are generated instantly as you
-                    type—seamless and quick! It Works entirely in your browser,
-                    with no third-party API dependency. Pick colors, upload
-                    logos, and style your QR code to fit your brand.
-                  </p>
-
-                  <a
-                    href="https://qrcode-azeezadeleye.vercel.app"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-
-        <!-- start stack item -->
-        <div class="stack-item stack-item-05 bg-linen lg-pt-8 lg-pb-8 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/temp.png)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    05
-                  </div>
-                  <div class="position-absolute right-0px bottom-minus-1px">
-                    <div class="vertical-title-center">
-                      <div
-                        class="title fw-700 fs-15 alt-font text-uppercase text-dark-gray bg-linen pt-30px pb-30px ps-10px pe-10px"
-                      >
-                        <span class="d-inline-block">Latest projects</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Editable Template Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray fs-50 alt-font fw-600 ls-minus-4px mb-25px"
-                  >
-                    User Editable Website Templates
-                  </h1>
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-35px">
-                    Built, styled and shipped high quality editable website
-                    template using React and Tailwind to fully integrate with
-                    the Dimpified platform which enables SMEs to select template
-                    from a wide range of options and use to build their dream
-                    booking website.
-                  </p>
-                  <a
-                    href="https://dimpified.com.ng/templates/barber-mordern"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-        <!-- start stack item -->
-        <!-- end stack item -->
-        <!-- start stack item -->
-        <div class="stack-item stack-item-06 bg-linen md-pt-0 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/acb-landing.jpg)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    06
-                  </div>
-                  <div class="position-absolute right-0px bottom-minus-1px">
-                    <div class="vertical-title-center">
-                      <div
-                        class="title fw-700 fs-15 alt-font text-uppercase text-dark-gray bg-linen pt-30px pb-30px ps-10px pe-10px"
-                      >
-                        <span class="d-inline-block">Latest projects</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Landing Page and Form Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray fs-50 alt-font fw-600 ls-minus-4px mb-25px"
-                  >
-                    African Creative Blueprint
-                  </h1>
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-35px">
-                    Developed the brands websites landing pages to showcase the
-                    brands creative mission and also engineered sign up forms
-                    for 16 different categories.
-                  </p>
-                  <a
-                    href="https://gfa-tech.com/testnet/acb"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-        <!-- start stack item -->
-        <div class="stack-item stack-item-07 bg-linen lg-pt-8 md-pb-0 md-pt-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/osun-slide.jpg)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    07
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px sm-pb-0 position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Design and Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray fs-50 alt-font fw-600 ls-minus-4px mb-25px"
-                  >
-                    State Upskilling Programs
-                  </h1>
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-35px">
-                    Led a team of Frontend Developers and QA Testers to design
-                    and develop landing pages, build intelligent sign-up forms,
-                    curate course contents and develop automated certificates,
-                    empowering over 500,000 individuals to acquire soft,
-                    technical, and business skills.
-                  </p>
-                  <a
-                    href="https://gfa-tech.com/projects"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-        <!-- start stack item -->
-        <div class="stack-item stack-item-08 bg-linen md-pt-0 md-pb-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/gfa-slide.jpg)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    08
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px sm-pb-0 position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Design and Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray fs-50 alt-font fw-600 ls-minus-4px mb-25px"
-                  >
-                    GFA Technologies Website
-                  </h1>
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-35px">
-                    Solely redesigned and redeveloped from scratch the GFA
-                    website interface during the company’s transition from
-                    GetFundedAfrica to GFA Technologies.
-                  </p>
-                  <a
-                    href="https://gfa-tech.com"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-        <!-- start stack item -->
-        <div class="stack-item stack-item-09 bg-linen lg-pt-8 md-pb-0 md-pt-0">
-          <div class="stack-item-wrapper">
-            <div class="container-fluid">
-              <div class="row align-items-center full-screen md-h-auto">
-                <div
-                  class="col-lg-6 cover-background overflow-visible h-100 md-h-500px"
-                  style="background-image: url(images/eunik-slide.jpg)"
-                >
-                  <div
-                    class="position-absolute right-minus-130px top-60px md-top-auto md-bottom-minus-50px fs-100 lg-fs-100 lg-right-minus-80px md-right-0px md-left-0px text-center text-lg-start alt-font z-index-9 fw-600 text-dark-gray opacity-3"
-                  >
-                    09
-                  </div>
-                </div>
-                <div
-                  class="col-lg-6 ps-12 pe-14 xxl-ps-10 xxl-pe-10 xl-pe-8 lg-ps-6 lg-pe-4 md-p-50px sm-ps-30px sm-pe-30px sm-pb-0 position-relative align-self-center text-md-start text-center"
-                >
-                  <div class="mb-15px">
-                    <span
-                      class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-                    ></span>
-                    <span
-                      class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                      >Website Design and Development</span
-                    >
-                  </div>
-                  <h1
-                    class="text-dark-gray fs-50 alt-font fw-600 ls-minus-4px mb-25px"
-                  >
-                    Eunik Clothings
-                  </h1>
-                  <p class="fs-16 text-dark-gray w-95 md-w-100 mb-35px">
-                    Designed and built the first and second versions of the
-                    Eunik Clothing website using Bootstrap, JavaScript, and
-                    HTML, creating an appealing digital platform to showcase
-                    fashion products and services to potential customers.
-                  </p>
-                  <a
-                    href="https://eunikclothings.com"
-                    target="_blank"
-                    class="btn btn-large btn-dark-gray btn-switch-text btn-box-shadow fw-400"
-                  >
-                    <span>
-                      <span class="btn-double-text" data-text="Explore project"
-                        >Explore project</span
-                      >
-                      <span
-                        ><i class="feather icon-feather-arrow-right"></i
-                      ></span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end stack item -->
-        <!-- start stack item -->
-      </div>
-    </section>
-    <section
-      class="background-position-center background-repeat"
-      id="contact"
-      style="background-image: url('images/vertical-center-line-bg.svg')"
-    >
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div
-            class="col-md-auto text-center text-md-end sm-mb-20px"
-            data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-          >
-            <h5 class="alt-font text-dark-gray fw-500 mb-0">
-              Connect easy and fast via socials
-            </h5>
-          </div>
-          <div
-            class="col-2 d-none d-lg-inline-block"
-            data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-          >
-            <span
-              class="w-100 h-1px bg-dark-gray opacity-2 d-flex mx-auto"
-            ></span>
-          </div>
-          <div
-            class="col-md-auto elements-social social-icon-style-04 text-center text-md-start ps-lg-0"
-            data-anime='{ "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-          >
-            <ul class="large-icon dark">
-              <li class="m-0">
-                <a
-                  class="whatsapp"
-                  href="https://api.whatsapp.com/send/?phone=2348109174125&text=Hi+Abdul-Azeez%2C+Trust+you%27re+doing+fine.+I%27ll+like+to+work+with+you+on+a+project.+The+detailss+include....+&type=phone_number&app_absent=0"
-                  target="_blank"
-                  ><i class="fa-brands fa-whatsapp"></i><span></span
-                ></a>
-              </li>
-              <li class="m-0">
-                <a
-                  class="linkedin"
-                  href="https://www.linkedin.com/in/abdulazeezadeleye/"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin-in"></i><span></span
-                ></a>
-              </li>
-              <li class="m-0">
-                <a
-                  class="github"
-                  href="https://github.com/abdul-azeezGFA/"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i><span></span
-                ></a>
-              </li>
-
-              <li class="m-0">
-                <a
-                  class="twitter"
-                  href="https://www.twitter.com/AzeezAdeleye_"
-                  target="_blank"
-                  ><i class="fa-brands fa-twitter"></i><span></span
-                ></a>
-              </li>
-              <li class="m-0">
-                <a
-                  class="instagram"
-                  href="https://instagram.com/AzeezAdeleye_"
-                  target="_blank"
-                  ><i class="fa-brands fa-instagram"></i><span></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="background-position-center background-repeat position-relative p-0"
-    >
-      <div
-        class="position-absolute top-0px right-0px w-50 h-100 bg-very-light-gray d-none d-lg-inline-block"
-      ></div>
-      <div class="container position-relative">
-        <div class="row g-0">
-          <div
-            class="col-lg-5 md-mb-50px"
-            data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-          >
-            <div class="mb-15px">
-              <span
-                class="w-25px h-1px d-inline-block bg-base-color me-5px align-middle"
-              ></span>
-              <span
-                class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle"
-                >Drop a message</span
-              >
-            </div>
-            <h4 class="alt-font fw-500 text-dark-gray ls-minus-2px mb-25px">
-              Kindly fill up the form
-            </h4>
-            <form
-              id="contactForm"
-              onsubmit="return sendEmail();"
-              class="contact-form-style-03"
-            >
-              <label
-                for="name"
-                class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0"
-                >Enter your name*</label
-              >
-              <div class="position-relative form-group mb-20px">
-                <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
-                <input
-                  class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required"
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder="What's your name"
-                  required
-                />
-              </div>
-
-              <label
-                for="email"
-                class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0"
-                >Email address*</label
-              >
-              <div class="position-relative form-group mb-20px">
-                <span class="form-icon"><i class="bi bi-envelope"></i></span>
-                <input
-                  class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required"
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email address"
-                  required
-                />
-              </div>
-              <label
-                for="email"
-                class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0"
-                >Subject*</label
-              >
-              <div class="position-relative form-group mb-20px">
-                <span class="form-icon"
-                  ><i class="bi bi-chat-square-dots"></i
-                ></span>
-                <input
-                  class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required"
-                  id="subject"
-                  type="text"
-                  name="subject"
-                  placeholder="Brief header of your message"
-                  required
-                />
-              </div>
-
-              <label
-                for="message"
-                class="form-label fs-14 text-uppercase text-dark-gray fw-600 mb-0"
-                >Your message</label
-              >
-              <div class="position-relative form-group form-textarea mb-0">
-                <textarea
-                  class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control"
-                  name="message"
-                  id="message"
-                  placeholder="Provide the details of your message"
-                  rows="3"
-                  required
-                ></textarea>
-                <span class="form-icon"
-                  ><i class="bi bi-chat-square-dots"></i
-                ></span>
-              </div>
-
-              <div class="row mt-25px align-items-center">
-                <div class="col-xl-7 col-lg-12 col-sm-7 lg-mb-30px md-mb-0">
-                  <p class="mb-0 fs-14 lh-22 text-center text-sm-start">
-                    You'll be replied to as fast as possible.
-                  </p>
-                </div>
-                <div
-                  class="col-xl-5 col-lg-12 col-sm-5 text-center text-sm-end text-lg-start text-xl-end xs-mt-25px"
-                >
-                  <button
-                    class="btn btn-large btn-dark-gray"
-                    type="submit"
-                    value="Submit"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </div>
-
-              <p id="error-message"></p>
-            </form>
-
-            <script>
-              function sendEmail() {
-                const name = document.getElementById("name").value;
-                const subject = document.getElementById("subject").value;
-                const email = document.getElementById("email").value;
-                const message = document.getElementById("message").value;
-                const errorMessage = document.getElementById("error-message");
-
-                errorMessage.textContent = "";
-
-                if (name.length < 3) {
-                  errorMessage.textContent =
-                    "Name must be at least 3 characters long.";
-                  return false;
-                }
-
-                if (!validateEmail(email)) {
-                  errorMessage.textContent =
-                    "Please enter a valid email address.";
-                  return false;
-                }
-                if (subject.length < 3) {
-                  errorMessage.textContent =
-                    "Subject must be at least 3 characters long.";
-                  return false;
-                }
-
-                if (message.length < 10) {
-                  errorMessage.textContent =
-                    "Message must be at least 10 characters long.";
-                  return false;
-                }
-
-                const mailtoLink = `mailto:message.abdulazeez@gmail.com?subject=${subject}&body=${encodeURIComponent(
-                  message
-                )} %0D%0ARegards, %0D%0A${name}`;
-
-                window.location.href = mailtoLink;
-
-                return false;
-              }
-
-              function validateEmail(email) {
-                const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                return re.test(String(email).toLowerCase());
-              }
-            </script>
-          </div>
-          <div
-            class="col-lg-6 offset-lg-1 position-relative d-flex flex-column overflow-hidden bg-very-light-gray ps-6 pe-2 pt-5 pb-6 lg-p-4 md-p-7 md-pb-27 md-border-radius-6px"
-            data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-          >
-            <div class="row position-relative">
-              <h2
-                class="alt-font fs-40 text-dark-gray mb-30px fw-600 ls-minus-3px"
-              >
-                A little brag won't hurt...
-              </h2>
-
-              <div
-                class="swiper"
-                data-slider-options='{ "slidesPerView": 1, "spaceBetween": 40, "loop": true, "autoplay": { "delay": 8000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 1 }, "768": { "slidesPerView":1 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'
-              >
-                <div class="swiper-wrapper">
-                  <!-- start review item -->
-                  <div class="swiper-slide">
-                    <h5
-                      class="text-dark-gray fs-24 mb-15px w-95 xl-w-100 lh-40 ls-minus-1px alt-font"
-                    >
-                      I want to appreciate you for the job well done. despite
-                      all the circumstances that surrounded the job, you’ve
-                      proven yourself to be one of the best developers out
-                      there, how you even made it with the little time frame
-                      amdsnes us. Our customers are in love with our website.
-                      Thanks God bless you sir.
-                    </h5>
-                    <span
-                      class="text-gradient-base-color fw-700 text-uppercase ls-1px"
-                      >Olasedidun Olamide - CEO, Eunik Clothings</span
-                    >
-                  </div>
-                  <!-- end review item -->
-                  <!-- start review item -->
-                  <div class="swiper-slide">
-                    <h5
-                      class="text-dark-gray fs-24 mb-15px w-95 xl-w-100 lh-40 ls-minus-1px alt-font"
-                    >
-                      Abdul-Azeez is an excellent resource, and a master at
-                      Full-Stack Development. He is hardworking and a dedicated
-                      person who will complete your project in a given time
-                      frame. He is always available when needed and did not
-                      hesitate to share his product front-end knowledge. I would
-                      recommend Abdul-Azeez. He is truly a gem.
-                    </h5>
-                    <span
-                      class="text-gradient-base-color fw-700 text-uppercase ls-1px"
-                      >Sekinat Ejalonibu - QA Engineer</span
-                    >
-                  </div>
-                  <!-- end review item -->
-                  <!-- start review item -->
-                  <div class="swiper-slide">
-                    <h5
-                      class="text-dark-gray fs-24 mb-15px w-95 xl-w-100 lh-40 ls-minus-1px alt-font"
-                    >
-                      Abdul-Azeez is a strong, dedicated human being whose love
-                      for what He does transcends all levels. He is very
-                      creative, dedicated, well-coordinated and is the guy to go
-                      to when you need to brainstorm ideas or try different
-                      things out. He's also always open to criticism. I watched
-                      his experience grow over the few months we worked together
-                      and all I can say is, you definitely want to have him on
-                      your team.
-                    </h5>
-                    <span
-                      class="text-gradient-base-color fw-700 text-uppercase ls-1px"
-                      >David Joseph - Fullstack Developer</span
-                    >
-                  </div>
-                  <!-- end review item -->
-                </div>
-              </div>
-              <div class="d-flex md-mb-25px">
-                <!-- start slider navigation -->
-                <div
-                  class="slider-one-slide-prev-1 text-dark-gray swiper-button-prev slider-navigation-style-04 border border-1 border-color-extra-medium-gray bg-white"
-                >
-                  <i class="fa-solid fa-arrow-left"></i>
-                </div>
-                <div
-                  class="slider-one-slide-next-1 text-dark-gray swiper-button-next slider-navigation-style-04 border border-1 border-color-extra-medium-gray bg-white"
-                >
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-                <!-- end slider navigation -->
-              </div>
-            </div>
-            <div
-              class="fs-70 xl-fs-50 md-fs-85 fw-700 text-base-color text-center text-lg-start position-absolute left-60px md-left-0px w-100 bottom-minus-15px text-outline text-outline-color-base-color text-outline-width-1px d-none d-md-block"
-            >
-              Testimonials
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end section -->
-    <!-- start footer -->
-    <footer
-      class="bg-charcoal-blue p-2 mt-3"
-      style="background-image: url(images/pattern.svg)"
-    >
-      <div class="container">
-        <!-- end instagram -->
-        <div class="row align-items-center">
-          <div
-            class="col-xl-4 col-sm-6 text-center text-sm-start text-white last-paragraph-no-margin fs-15 order-3 order-md-1"
-          >
-            <p>
-              &COPY; Copyright 2024
-              <a
-                href="index.html"
-                target="_blank"
-                class="text-decoration-line-bottom text-light fw-400"
-                >Abdul-Azeez O. Adeleye</a
-              >
-            </p>
-          </div>
-          <div
-            class="col-xl-6 text-center text-white text-dark-gray-hover lg-mt-10px sm-mt-0 sm-mb-10px order-1 order-xl-2 order-md-3"
-          >
-            <ul class="footer-navbar dark fs-17 fw-600">
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About </a>
-              </li>
-              <li class="nav-item">
-                <a href="#experience" class="nav-link">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="col-xl-2 col-sm-6 position-relative text-center text-sm-end elements-social social-text-style-01 order-2 order-xl-3 xs-mb-10px"
-          >
-            <ul class="fs-16 light fw-600">
-              <li>
-                <a
-                  class="linkedin"
-                  href="https://www.linkedin.com/in/abdulazeezadeleye/"
-                  target="_blank"
-                  >Li.</a
-                >
-              </li>
-              <li>
-                <a
-                  class="github"
-                  href="https://github.com/abdul-azeezGFA/"
-                  target="_blank"
-                  >Gh.</a
-                >
-              </li>
-              <li>
-                <a
-                  class="instagram"
-                  href="https://www.instagram.com/AzeezAdeleye_"
-                  target="_blank"
-                  >Ig.</a
-                >
-              </li>
-              <li>
-                <a
-                  class="twitter"
-                  href="https://www.twitter.com/AzeezAdeleye_"
-                  target="_blank"
-                  >Tw.</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer -->
-    <!-- start scroll progress -->
-    <div class="scroll-progress d-none d-xxl-block">
-      <a href="#" class="scroll-top" aria-label="scroll">
-        <span class="scroll-text">Scroll</span
-        ><span class="scroll-line"><span class="scroll-point"></span></span>
-      </a>
     </div>
-    <!-- end scroll progress -->
-    <!-- javascript libraries -->
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- /Setting Color -->
+
+    <!-- Menu Mobile -->
+    <div class="action-open-mobile d-lg-none">
+      <div class="tf-btn-icon style-2">
+        <div class="btn-mobile-menu">
+          <span></span>
+        </div>
+      </div>
+      <div class="nav-mobile-list">
+        <ul class="nav-mobile-item">
+          <li class="nav-item">
+            <a href="#home" class="item-link scroll-link">
+              <i class="icon icon-home"></i>
+              <p class="tool-tip text-caption">Home</p>
+            </a>
+          </li>
+          <li class="br-line"></li>
+          <li class="nav-item">
+            <a href="#about" class="item-link scroll-link">
+              <i class="icon icon-user-circle"></i>
+              <p class="tool-tip text-caption">About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#professional-experience" class="item-link scroll-link">
+              <i class="icon icon-edu"></i>
+              <p class="tool-tip text-caption">Experience</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="item-link scroll-link">
+              <i class="icon icon-high-light"></i>
+              <p class="tool-tip text-caption">Projects</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#blog" class="item-link scroll-link">
+              <i class="icon icon-service"></i>
+              <p class="tool-tip text-caption">Blog</p>
+            </a>
+          </li>
+
+          <li class="br-line"></li>
+          <li class="nav-item">
+            <a href="#contact" class="item-link scroll-link">
+              <i class="icon icon-send"></i>
+              <p class="tool-tip text-caption">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /Menu Mobile -->
+
+    <!-- Tool Sidebar -->
+    <div class="sidebar-tools pst-v1">
+      <div class="nav-top">
+        <div class="tf-btn-icon toggle-switch-mode">
+          <i class="icon icon-light"></i>
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="item-link scroll-link">
+            <i class="icon icon-home"></i>
+            <p class="tool-tip text-caption">Home</p>
+          </a>
+        </li>
+        <li class="br-line"></li>
+        <li class="nav-item">
+          <a href="#about" class="item-link scroll-link">
+            <i class="icon icon-user-circle"></i>
+            <p class="tool-tip text-caption">About</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#professional-experience" class="item-link scroll-link">
+            <i class="icon icon-edu"></i>
+            <p class="tool-tip text-caption">Experience</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="item-link scroll-link">
+            <i class="icon icon-high-light"></i>
+            <p class="tool-tip text-caption">Projects</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#blog" class="item-link scroll-link">
+            <i class="icon icon-service"></i>
+            <p class="tool-tip text-caption">Blog</p>
+          </a>
+        </li>
+
+        <li class="br-line"></li>
+        <li class="nav-item">
+          <a href="#contact" class="item-link scroll-link">
+            <i class="icon icon-send"></i>
+            <p class="tool-tip text-caption">Contact</p>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-bottom">
+        <a href="#" class="tf-btn-icon go-top">
+          <i class="icon icon-arrow-top"></i>
+        </a>
+      </div>
+    </div>
+    <!-- /Tool Sidebar -->
+
+    <main id="wrapper">
+      <!-- Time Local -->
+      <div class="tf-header-wrap">
+        <a href="index.html" class="logo-site d-lg-none">
+          <img
+            class="image-switch"
+            data-light="assets/images/logo/logo.png"
+            data-dark="assets/images/logo/logo-2.png"
+            loading="lazy"
+            width="40"
+            height="40"
+            src="assets/images/logo/logo.png"
+            alt="Image"
+          />
+        </a>
+        <div class="left">
+          <div class="time-local text-body-3">
+            <p class="date"></p>
+            <p class="clock"></p>
+          </div>
+        </div>
+      </div>
+      <!-- /Time Local -->
+
+      <div class="sidebar-user">
+        <div class="wrap">
+          <div class="user-image">
+            <div class="image">
+              <img
+                loading="lazy"
+                width="468"
+                height="856"
+                src="assets/images/avatar/avatar.png"
+                alt="Image"
+              />
+            </div>
+            <div class="meta-left d-none d-sm-block">
+              <div class="bg-item-svg">
+                <img
+                  class="image-switch"
+                  data-dark="assets/images/item/vector-user_dark.svg"
+                  width="32"
+                  height="227"
+                  src="assets/images/item/vector-user.svg"
+                  alt="Image"
+                />
+              </div>
+              <p
+                class="avaiable-dot vertical text-body-3 text-black-72 fw-medium"
+              >
+                <span class="text-vertical">Available for Projects</span>
+                <span class="dot"></span>
+              </p>
+            </div>
+          </div>
+          <div class="user-logo d-none d-lg-block">
+            <a href="#home">
+              <img
+                class="image-switch"
+                data-light="assets/images/logo/logo.png"
+                data-dark="assets/images/logo/logo-2.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                src="assets/images/logo/logo.png"
+                alt="Abdul-Azeez Logo"
+              />
+            </a>
+          </div>
+          <ul class="tf-social-icon-2 user-social d-grid">
+            <li>
+              <a href="https://linkedin.com/in/abdulazeezadeleye"
+                ><i class="icon icon-linkin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://wa.me/2348109174125"
+                ><img
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  src="assets/icon/whatsapp-glyph-black.svg"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/YemiAbdulAzeez">
+                <img
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  src="assets/icon/github-icon-1.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/YemiAbdulAzeez"
+                ><i class="icon icon-x"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="user-info">
+            <p class="avaiable-dot text-body-3 fw-medium d-sm-none">
+              <span class="dot"></span>
+              <span>Available for Projects</span>
+            </p>
+            <h5 class="greeting letter-space--2 text-white animationtext clip">
+              Hey, I'm
+              <span class="cd-words-wrapper">
+                <span class="item-text is-visible">Abdul-Azeez</span>
+                <span class="item-text is-hidden">a Software Engineer</span>
+                <span class="item-text is-hidden">a Tech Lead</span>
+                <span class="item-text is-hidden">a Solution Architect</span>
+              </span>
+            </h5>
+            <p class="introduce text-white-72 letter-space--05 text-body-3">
+              Senior Software Engineer & Tech Lead with 5+ years of experience
+              architecting end-to-end systems for Fintech, SaaS, and Government
+              sectors. Expert in scaling products from 0 to 1.
+            </p>
+            <div class="br-line"></div>
+            <div class="action-group">
+              <a href="#projects" class="tf-btn-action">
+                <span class="ic-wrap">
+                  <i class="icon icon-arrow-right-top"></i>
+                </span>
+                <span class="text text-body-3 letter-space--05 fw-medium">
+                  Explore Projects
+                </span>
+                <span class="ic-wrap">
+                  <i class="icon icon-arrow-right-top"></i>
+                </span>
+              </a>
+              <a href="resume.pdf" class="action-down">
+                <i class="icon icon-download"></i>
+                <span class="text-body-3"> View Resume </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-xl-8 ms-auto">
+              <div class="wrap-container">
+                <!-- Intro -->
+                <div id="home" class="section-intro flat-spacing">
+                  <div class="intro-author effectFade fadeUp no-div">
+                    <div class="author-image">
+                      <a href="#about">
+                        <img
+                          loading="lazy"
+                          width="23"
+                          height="31"
+                          src="assets/images/avatar/avatar-boy.png"
+                          alt="Abdul-Azeez"
+                        />
+                      </a>
+                    </div>
+                    <div class="author-info letter-space--05">
+                      <p class="info_name text-black">Abdul-Azeez Adeleye</p>
+                      <p class="info_duty text-black-50 text-body-3">
+                        Senior Software Engineer & Tech Lead
+                      </p>
+                    </div>
+                  </div>
+                  <h1
+                    class="intro-title letter-space--2 split-text effect-blur-fade"
+                  >
+                    I'm building software
+                    <span class="type-2">products </span> & scalable
+                    <span class="type-1"> systems</span> that drive real value
+                  </h1>
+                  <div class="intro-item">
+                    <div class="scribble-wrap">
+                      <svg
+                        class="scribble"
+                        viewBox="0 0 772 320"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_268_462"
+                            x1="12"
+                            y1="107"
+                            x2="752"
+                            y2="66"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset="0" stop-color="#F5F5F5" />
+                            <stop
+                              class="bred"
+                              offset="0.466346"
+                              stop-color="#00DE51"
+                            />
+                            <stop offset="1" stop-color="#F5F5F5" />
+                          </linearGradient>
+                        </defs>
+
+                        <path
+                          id="scribblePath"
+                          d="M12 104.315C34.6667 116.269 92.8 137.913 144 128.853C208 117.528 317 33.5324 356 27.8698C395 22.2072 502 20 530 79.1463C557.711 137.682 582 217 477 281.743C423.902 314.483 308 281.433 365 188C422 94.5672 544 65.6205 597 81.6645C650 97.7085 732 88.2708 752 64.6767"
+                          stroke="url(#paint0_linear_268_462)"
+                          stroke-width="50"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="box-counter effectFade fadeUp no-div">
+                    <div class="wg-counter">
+                      <p class="counter h1 d-flex font-2 letter-space--2">
+                        <span class="number" data-speed="1000" data-to="6"
+                          >0</span
+                        >
+                        +
+                      </p>
+                      <p class="text text-black-56 text-body-3">
+                        Years of experience
+                      </p>
+                    </div>
+                    <div class="wg-counter">
+                      <p class="counter h1 d-flex font-2 letter-space--2">
+                        <span class="number" data-speed="1000" data-to="500"
+                          >0</span
+                        >
+                        M+
+                      </p>
+                      <p class="text text-black-56 text-body-3">
+                        Revenue Generated
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="br-line"></div>
+                    <div class="group-action">
+                      <a href="#contact" class="tf-btn-action style-white">
+                        <span class="ic-wrap">
+                          <i class="icon icon-arrow-right-top"></i>
+                        </span>
+                        <span
+                          class="text text-body-3 letter-space--05 fw-medium"
+                        >
+                          Contact Me
+                        </span>
+                        <span class="ic-wrap">
+                          <i class="icon icon-arrow-right-top"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Intro -->
+
+                <!-- About -->
+                <div id="about" class="section-about type-2 flat-spacing">
+                  <div class="sect-tag text-caption fw-medium">
+                    <i class="icon icon-user-circle"></i>
+                    About
+                  </div>
+                  <h4
+                    class="s-title letter-space--2 text-black-72 split-text effect-blur-fade"
+                  >
+                    Building scalable systems with
+                    <br class="d-none d-lg-block" />
+                    modern technology stacks,
+                    <br class="d-none d-lg-block" />
+                    driving business impact
+                  </h4>
+                  <p class="s-desc text-black-56 scrolling-effect effectTop">
+                    I'm a Senior Software Engineer passionate about architecting
+                    end-to-end systems that blend thoughtful design with robust
+                    engineering. My favorite work lies at the intersection of
+                    product development and technical execution, creating
+                    solutions that not only solve real business problems but are
+                    meticulously built for performance, scalability, and
+                    accessibility.
+                    <br />
+                    <br />
+                    Currently, I'm a Technical Lead at Dimpified, a division of
+                    GFA Technologies, leading cross-functional teams to ship
+                    industry-specific Fintech and SaaS platforms. I specialize
+                    in building high-concurrency systems with React, Next.js,
+                    and Node.js, and recently engineered platforms supporting
+                    520k+ concurrent users with 99.9% uptime.
+                    <br />
+                    <br />
+                    In the past, I've had the opportunity to drive ₦500M+ in
+                    value through platforms like LAG-UP and Gateway,
+                    re-engineered financial platforms like ClearerPay to
+                    increase user completion rates by 80%, and built entire
+                    startup's frontend from scratch in 2 weeks to secure seed
+                    funding. My journey spans from freelance web development to
+                    leading enterprise projects for government and fintech
+                    sectors.
+                    <br />
+                    <br />
+                    Beyond coding, I'm passionate about mentoring, building
+                    personal projects, and staying active through football and
+                    exploring new technologies that push the boundaries of
+                    what's possible in the sofware realm.
+                  </p>
+
+                  <!-- Skills Section with SVG Icons -->
+                  <div id="skills" class="section-service flat-spacing">
+                    <div class="sect-tag text-caption fw-medium">
+                      <i class="icon icon-service"></i>
+                      Technical Skills
+                    </div>
+
+                    <ul class="award-list">
+                      <!-- Frontend Engineering -->
+                      <li class="award-item hover-cursor-img">
+                        <div class="left">
+                          <h6 class="award_name letter-space--2 text-black-72">
+                            Frontend Engineering
+                          </h6>
+                          <p class="award_desc text-black-56">
+                            React.js • Next.js • TypeScript • Redux • Tailwind
+                            CSS
+                          </p>
+                        </div>
+                        <img
+                          class="image-switch"
+                          width="50"
+                          height="50"
+                          src="assets/icon/react-2.svg"
+                          alt="Frontend"
+                        />
+                      </li>
+
+                      <!-- Backend & Architecture -->
+                      <li class="award-item hover-cursor-img">
+                        <div class="left">
+                          <h6 class="award_name letter-space--2 text-black-72">
+                            Backend & Architecture
+                          </h6>
+                          <p class="award_desc text-black-56">
+                            Node.js • Express • FastAPI • Microservices
+                          </p>
+                        </div>
+                        <img
+                          class="image-switch"
+                          width="50"
+                          height="50"
+                          src="assets/icon/nodejs-icon.svg"
+                          alt="Backend"
+                        />
+                      </li>
+
+                      <!-- Programming Languages -->
+                      <li class="award-item hover-cursor-img">
+                        <div class="left">
+                          <h6 class="award_name letter-space--2 text-black-72">
+                            Programming Languages
+                          </h6>
+                          <p class="award_desc text-black-56">
+                            TypeScript • JavaScript • Python • SQL
+                          </p>
+                        </div>
+                        <img
+                          class="image-switch"
+                          width="50"
+                          height="50"
+                          src="assets/icon/python-5.svg"
+                          alt="Python"
+                        />
+                        <div class="award_img hover-image"></div>
+                      </li>
+
+                      <!-- Database & Cloud -->
+                      <li class="award-item hover-cursor-img">
+                        <div class="left">
+                          <h6 class="award_name letter-space--2 text-black-72">
+                            Database & Cloud
+                          </h6>
+                          <p class="award_desc text-black-56">
+                            MongoDB • PostgreSQL • MySQL • Azure • AWS
+                          </p>
+                        </div>
+                        <img
+                          class="image-switch"
+                          width="50"
+                          height="50"
+                          src="assets/icon/mongodb-icon-2.svg"
+                          alt="Database"
+                        />
+                        <div class="award_img hover-image"></div>
+                      </li>
+
+                      <!-- DevOps & Tools -->
+                      <li class="award-item hover-cursor-img">
+                        <div class="left">
+                          <h6 class="award_name letter-space--2 text-black-72">
+                            DevOps & Tools
+                          </h6>
+                          <p class="award_desc text-black-56">
+                            Git • CI/CD • Docker • Selenium • Jest • Postman
+                          </p>
+                        </div>
+                        <img
+                          class="image-switch"
+                          width="50"
+                          height="50"
+                          src="assets/icon/github-icon-1.svg"
+                          alt="Github"
+                        />
+                      </li>
+
+                      <!-- Core Competencies -->
+                      <li class="award-item hover-cursor-img">
+                        <div class="left">
+                          <h6 class="award_name letter-space--2 text-black-72">
+                            Core Competencies
+                          </h6>
+                          <p class="award_desc text-black-56">
+                            System Design • Agile Leadership • Performance
+                            Optimization • WCAG Accessibility
+                          </p>
+                        </div>
+                        <img
+                          class="image-switch"
+                          width="50"
+                          height="50"
+                          src="assets/icon/draw-io.svg"
+                          alt="System Design"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /About -->
+
+                <!-- Professional Experience -->
+                <div
+                  id="professional-experience"
+                  class="section-education-experience flat-spacing"
+                >
+                  <div
+                    class="sect-tag text-caption fw-medium effectFade fadeUp no-div"
+                  >
+                    <i class="icon icon-edu"></i>
+                    Professional Experience
+                  </div>
+                  <div class="timeline scroll-down">
+                    <div class="timeline-line">
+                      <div class="prg-line"></div>
+                    </div>
+
+                    <!-- Item 1 - GFA Technologies (Technical Lead) -->
+                    <div class="timeline-item effectFade fadeUp no-div">
+                      <p class="timeline-date text-black-56">
+                        Dec 2024 - Present
+                      </p>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <div class="icon">
+                          <a href="#projects">
+                            <img
+                              class="image-switch"
+                              data-dark="assets/images/logo/dimpified.png"
+                              loading="lazy"
+                              width="82"
+                              height="32"
+                              src="assets/images/logo/dimpified.png"
+                              alt="GFA Technologies"
+                            />
+                          </a>
+                        </div>
+                        <p class="timeline-role fw-medium text-black-72">
+                          Technical Lead, Product Development & Design
+                        </p>
+                        <p class="timeline-desc text-body-3 text-black-56">
+                          Leading cross-functional team to ship
+                          industry-specific Fintech/SaaS templates, increasing
+                          customer adoption by 23%. Delivered 15+ modules using
+                          React, Next.js & Tailwind. Managed agile sprints,
+                          cutting feature delivery time by 40%.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 2 - GFA Technologies (Senior Software Engineer) -->
+                    <div class="timeline-item effectFade fadeUp no-div">
+                      <p class="timeline-date text-black-56">
+                        Jul 2024 - Dec 2024
+                      </p>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <div class="icon">
+                          <a href="#projects">
+                            <img
+                              class="image-switch"
+                              data-dark="assets/images/logo/gfa.png"
+                              loading="lazy"
+                              width="32"
+                              height="32"
+                              src="assets/images/logo/gfa.png"
+                              alt="GFA Technologies"
+                            />
+                          </a>
+                        </div>
+                        <p class="timeline-role fw-medium text-black-72">
+                          Senior Software Engineer
+                        </p>
+                        <p class="timeline-desc text-body-3 text-black-56">
+                          Led design & deployment of Dimpified website builder,
+                          boosting customer acquisition by 62%. Built "LAG-UP"
+                          and "Gateway" platforms, integrating government APIs
+                          to process large-scale data and generate ₦500M+
+                          revenue.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 3 - GFA Technologies (Lead Engineer) -->
+                    <div class="timeline-item effectFade fadeUp no-div">
+                      <p class="timeline-date text-black-56">
+                        Jan 2024 - Jul 2024
+                      </p>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <div class="icon">
+                          <a href="#projects">
+                            <img
+                              class="image-switch"
+                              data-dark="assets/images/logo/gfa.png"
+                              loading="lazy"
+                              width="32"
+                              height="32"
+                              src="assets/images/logo/gfa.png"
+                              alt="GFA Technologies"
+                            />
+                          </a>
+                        </div>
+                        <p class="timeline-role fw-medium text-black-72">
+                          Lead Engineer - Testing & Support
+                        </p>
+                        <p class="timeline-desc text-body-3 text-black-56">
+                          Maintained FGN-ALAT/NYSC-ALAT portals supporting 520k+
+                          concurrent users with 99.9% uptime. Engineered secure
+                          PDF generation pipeline. Established E2E testing,
+                          reducing critical bugs by 85%.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 4 - Clearer -->
+                    <div class="timeline-item effectFade fadeUp no-div">
+                      <p class="timeline-date text-black-56">
+                        Jun 2025 - Nov 2025
+                      </p>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <div class="icon">
+                          <a href="#projects">
+                            <img
+                              class="image-switch"
+                              data-dark="assets/images/logo/clearerpay.svg"
+                              width="89"
+                              height="32"
+                              src="assets/images/logo/clearerpay.svg"
+                              alt="Clearer"
+                            />
+                          </a>
+                        </div>
+                        <p class="timeline-role fw-medium text-black-72">
+                          Senior Software Engineer at Clearer
+                        </p>
+                        <p class="timeline-desc text-body-3 text-black-56">
+                          Re-engineered ClearerPay platform using Next.js &
+                          TypeScript, increasing user onboarding completion by
+                          80%. Built dashboards for ₦20M+ daily OTC
+                          transactions. Led frontend for Swetche digital asset
+                          app.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 5 - Petabyte eSports -->
+                    <div class="timeline-item effectFade fadeUp no-div">
+                      <p class="timeline-date text-black-56">
+                        Nov 2024 - Jan 2025
+                      </p>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <div class="icon">
+                          <a href="#projects">
+                            <img
+                              class="image-switch"
+                              data-dark="assets/images/logo/logo-peta.png"
+                              width="32"
+                              height="32"
+                              src="assets/images/logo/logo-peta.png"
+                              alt="Petabyte eSports"
+                            />
+                          </a>
+                        </div>
+                        <p class="timeline-role fw-medium text-black-72">
+                          Senior Frontend Engineer at Petabyte eSports
+                        </p>
+                        <p class="timeline-desc text-body-3 text-black-56">
+                          Built full platform from scratch in 2 weeks, enabling
+                          seed funding. Created AI-driven dashboards with React
+                          & Framer Motion. Reduced load times by 27% through
+                          optimization for low-bandwidth devices.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Item 6 - Eunik Nigeria -->
+                    <div class="timeline-item effectFade fadeUp no-div">
+                      <p class="timeline-date text-black-56">
+                        Sep 2020 - Mar 2023
+                      </p>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                        <div class="icon">
+                          <a href="#projects">
+                            <img
+                              class="image-switch"
+                              data-dark="assets/images/item/edu-default_dark.svg"
+                              width="32"
+                              height="32"
+                              src="assets/images/logo/eunik.png"
+                              alt="Eunik Nigeria"
+                            />
+                          </a>
+                        </div>
+                        <p class="timeline-role fw-medium text-black-72">
+                          Frontend Developer at Eunik Nigeria
+                        </p>
+                        <p class="timeline-desc text-body-3 text-black-56">
+                          Built responsive e-commerce landing page, increasing
+                          conversion by 31%. Maintained product catalog with
+                          99.9% uptime. Optimized checkout flow, reducing bounce
+                          rates by 22% and improving mobile responsiveness.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Professional Experience -->
+
+                <!-- Projects Highlight -->
+                <div id="projects" class="section-work flat-spacing">
+                  <div class="sect-tag text-caption fw-medium">
+                    <i class="icon icon-high-light"></i>
+                    Project Highlights
+                  </div>
+                  <div class="work-list element-sticky">
+                    <!-- Dimpified Platform -->
+                    <div class="sticky-item">
+                      <div class="wg-work">
+                        <div class="work-image">
+                          <a href="projects/dimpified">
+                            <img
+                              loading="lazy"
+                              width="700"
+                              height="427"
+                              src="assets/images/section/dimpified.png"
+                              alt="Dimpified Platform"
+                            />
+                          </a>
+                        </div>
+                        <div class="wrap">
+                          <div class="work-content">
+                            <div class="w-image">
+                              <a href="projects/dimpified">
+                                <img
+                                  loading="lazy"
+                                  width="468"
+                                  height="856"
+                                  src="assets/images/section/dimpified.png"
+                                  alt="Dimpified Platform"
+                                />
+                              </a>
+                            </div>
+                            <div class="content">
+                              <div class="content-top">
+                                <div class="w-logo">
+                                  <a href="projects/dimpified">
+                                    <img
+                                      loading="lazy"
+                                      width="40"
+                                      height="40"
+                                      src="assets/images/logo/logo-2.png"
+                                      alt="Dimpified Logo"
+                                    />
+                                  </a>
+                                </div>
+                                <h4
+                                  class="w-title letter-space--2 text-white-72"
+                                >
+                                  Dimpified Platform
+                                </h4>
+                                <p class="w-desc text-white-56 text-body-3">
+                                  A comprehensive website builder with
+                                  integrated booking and payment processing
+                                  designed specifically for service-based
+                                  businesses. The platform enables entrepreneurs
+                                  to create professional websites, manage
+                                  appointments, and accept payments through a
+                                  single unified interface.
+                                </p>
+                                <div class="w-highlight">
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Year
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      2024
+                                    </p>
+                                  </div>
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Impact
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      62% Growth
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="w-tag-list">
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Full Stack</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >SaaS</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Fintech</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content-bottom">
+                                <div class="br-line"></div>
+                                <div class="group-action">
+                                  <a
+                                    href="projects/dimpified"
+                                    class="tf-btn-action style-white"
+                                  >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                    <span
+                                      class="text text-body-3 letter-space--05 fw-medium"
+                                      >View Project Details</span
+                                    >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                  </a>
+                                  <p class="text-white-40">
+                                    <span class="text-white-72">05</span> / 05
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ClearerPay Platform -->
+                    <div class="sticky-item">
+                      <div class="wg-work">
+                        <div class="work-image">
+                          <a href="projects/clearerpay">
+                            <img
+                              loading="lazy"
+                              width="700"
+                              height="427"
+                              src="assets/images/section/clearerpay.png"
+                              alt="ClearerPay Platform"
+                            />
+                          </a>
+                        </div>
+                        <div class="wrap">
+                          <div class="work-content">
+                            <div class="w-image">
+                              <a href="projects/clearerpay">
+                                <img
+                                  loading="lazy"
+                                  width="468"
+                                  height="856"
+                                  src="assets/images/section/clearerpay.png"
+                                  alt="ClearerPay Platform"
+                                />
+                              </a>
+                            </div>
+                            <div class="content">
+                              <div class="content-top">
+                                <div class="w-logo">
+                                  <a href="projects/clearerpay">
+                                    <img
+                                      loading="lazy"
+                                      width="40"
+                                      height="40"
+                                      src="assets/images/logo/logo-2.png"
+                                      alt="ClearerPay Logo"
+                                    />
+                                  </a>
+                                </div>
+                                <h4
+                                  class="w-title letter-space--2 text-white-72"
+                                >
+                                  ClearerPay Platform
+                                </h4>
+                                <p class="w-desc text-white-56 text-body-3">
+                                  A financial technology platform for processing
+                                  over-the-counter (OTC) transactions, featuring
+                                  real-time dashboards and optimized user
+                                  onboarding. The system handles high-volume
+                                  transactions while maintaining robust security
+                                  and error-handling mechanisms.
+                                </p>
+                                <div class="w-highlight">
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Year
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      2025
+                                    </p>
+                                  </div>
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Daily Volume
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      ₦20M+
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="w-tag-list">
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Fintech</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Next.js</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Real-time</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content-bottom">
+                                <div class="br-line"></div>
+                                <div class="group-action">
+                                  <a
+                                    href="projects/clearerpay"
+                                    class="tf-btn-action style-white"
+                                  >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                    <span
+                                      class="text text-body-3 letter-space--05 fw-medium"
+                                      >View Project Details</span
+                                    >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                  </a>
+                                  <p class="text-white-40">
+                                    <span class="text-white-72">04</span> / 05
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- NERD Platform -->
+                    <div class="sticky-item">
+                      <div class="wg-work">
+                        <div class="work-image">
+                          <a href="https://ned.gov.ng" target="_blank">
+                            <img
+                              loading="lazy"
+                              width="700"
+                              height="427"
+                              src="assets/images/section/nerd.png"
+                              alt="NERD Platform"
+                            />
+                          </a>
+                        </div>
+                        <div class="wrap">
+                          <div class="work-content">
+                            <div class="w-image">
+                              <a href="https://ned.gov.ng" target="_blank">
+                                <img
+                                  loading="lazy"
+                                  width="468"
+                                  height="856"
+                                  src="assets/images/section/nerd.png"
+                                  alt="NERD Platform"
+                                />
+                              </a>
+                            </div>
+                            <div class="content">
+                              <div class="content-top">
+                                <div class="w-logo">
+                                  <a href="https://ned.gov.ng" target="_blank">
+                                    <img
+                                      loading="lazy"
+                                      width="40"
+                                      height="40"
+                                      src="assets/images/logo/logo-2.png"
+                                      alt="NERD Logo"
+                                    />
+                                  </a>
+                                </div>
+                                <h4
+                                  class="w-title letter-space--2 text-white-72"
+                                >
+                                  NERD Platform
+                                </h4>
+                                <p class="w-desc text-white-56 text-body-3">
+                                  The Nigerian Education Repository and
+                                  Databank, a comprehensive educational platform
+                                  featuring high-performance landing pages with
+                                  advanced SEO optimization and full WCAG 2.1
+                                  accessibility compliance. The system includes
+                                  secure form processing and real-time data
+                                  synchronization.
+                                </p>
+                                <div class="w-highlight">
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Year
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      2025
+                                    </p>
+                                  </div>
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Form Completion
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      +28%
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="w-tag-list">
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Education</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Next.js</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Accessibility</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content-bottom">
+                                <div class="br-line"></div>
+                                <div class="group-action">
+                                  <a
+                                    href="https://ned.gov.ng"
+                                    target="_blank"
+                                    class="tf-btn-action style-white"
+                                  >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                    <span
+                                      class="text text-body-3 letter-space--05 fw-medium"
+                                      >View Live</span
+                                    >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                  </a>
+                                  <p class="text-white-40">
+                                    <span class="text-white-72">03</span> / 05
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- QR Code Generator -->
+                    <div class="sticky-item">
+                      <div class="wg-work">
+                        <div class="work-image">
+                          <a
+                            href="https://qrcode-azeezadeleye.vercel.app"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="700"
+                              height="427"
+                              src="assets/images/section/qr.png"
+                              alt="QR Code Generator"
+                            />
+                          </a>
+                        </div>
+                        <div class="wrap">
+                          <div class="work-content">
+                            <div class="w-image">
+                              <a
+                                href="https://qrcode-azeezadeleye.vercel.app"
+                                target="_blank"
+                              >
+                                <img
+                                  loading="lazy"
+                                  width="468"
+                                  height="856"
+                                  src="assets/images/section/qr.png"
+                                  alt="QR Code Generator"
+                                />
+                              </a>
+                            </div>
+                            <div class="content">
+                              <div class="content-top">
+                                <div class="w-logo">
+                                  <a
+                                    href="https://qrcode-azeezadeleye.vercel.app"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      loading="lazy"
+                                      width="40"
+                                      height="40"
+                                      src="assets/images/logo/logo-2.png"
+                                      alt="QR Code Logo"
+                                    />
+                                  </a>
+                                </div>
+                                <h4
+                                  class="w-title letter-space--2 text-white-72"
+                                >
+                                  QR Code Generator
+                                </h4>
+                                <p class="w-desc text-white-56 text-body-3">
+                                  A fully offline-capable QR code generation
+                                  tool built without third-party API
+                                  dependencies. Features real-time preview,
+                                  custom styling options, logo embedding, and
+                                  one-click PNG downloads with streamlined user
+                                  workflows.
+                                </p>
+                                <div class="w-highlight">
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Year
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      2025
+                                    </p>
+                                  </div>
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Work flow
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      4→1 Steps
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="w-tag-list">
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Frontend</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >React</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Offline</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content-bottom">
+                                <div class="br-line"></div>
+                                <div class="group-action">
+                                  <a
+                                    href="https://qrcode-azeezadeleye.vercel.app"
+                                    target="_blank"
+                                    class="tf-btn-action style-white"
+                                  >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                    <span
+                                      class="text text-body-3 letter-space--05 fw-medium"
+                                      >View Live</span
+                                    >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                  </a>
+                                  <p class="text-white-40">
+                                    <span class="text-white-72">02</span> / 05
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- LAG-UP -->
+                    <div class="sticky-item">
+                      <div class="wg-work">
+                        <div class="work-image">
+                          <a
+                            href="https://lag-up.dimpified.com/"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="700"
+                              height="427"
+                              src="assets/images/section/lagup.png"
+                              alt="LAG-UP Platform"
+                            />
+                          </a>
+                        </div>
+                        <div class="wrap">
+                          <div class="work-content">
+                            <div class="w-image">
+                              <a
+                                href="https://lag-up.dimpified.com/"
+                                target="_blank"
+                              >
+                                <img
+                                  loading="lazy"
+                                  width="468"
+                                  height="856"
+                                  src="assets/images/section/lagup.png"
+                                  alt="LAG-UP Platform"
+                                />
+                              </a>
+                            </div>
+                            <div class="content">
+                              <div class="content-top">
+                                <div class="w-logo">
+                                  <a
+                                    href="https://lag-up.dimpified.com/"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      loading="lazy"
+                                      width="40"
+                                      height="40"
+                                      src="assets/images/logo/logo-2.png"
+                                      alt="LAG-UP Logo"
+                                    />
+                                  </a>
+                                </div>
+                                <h4
+                                  class="w-title letter-space--2 text-white-72"
+                                >
+                                  LAG-UP Skill Acquisition Platform
+                                </h4>
+                                <p class="w-desc text-white-56 text-body-3">
+                                  A government-backed skill acquisition platform
+                                  built to empower Nigerian youth with
+                                  vocational training and digital skills.
+                                  Integrated with government APIs to process
+                                  large-scale data, generating over ₦500M in
+                                  revenue while supporting thousands of
+                                  concurrent users with enterprise-grade
+                                  reliability.
+                                </p>
+                                <div class="w-highlight">
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Year
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      2024
+                                    </p>
+                                  </div>
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Revenue Generated
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      ₦500M+
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="w-tag-list">
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Government</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >HTML + PHP</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >API Integration</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >High Scale</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content-bottom">
+                                <div class="br-line"></div>
+                                <div class="group-action">
+                                  <a
+                                    href="https://lag-up.dimpified.com/"
+                                    target="_blank"
+                                    class="tf-btn-action style-white"
+                                  >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                    <span
+                                      class="text text-body-3 letter-space--05 fw-medium"
+                                      >View Live</span
+                                    >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                  </a>
+                                  <p class="text-white-40">
+                                    <span class="text-white-72">01</span> / 05
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Petabyte eSports -->
+                    <div class="sticky-item">
+                      <div class="wg-work">
+                        <div class="work-image">
+                          <a href="https://pesports.gg/" target="_blank">
+                            <img
+                              loading="lazy"
+                              width="700"
+                              height="427"
+                              src="assets/images/section/pesport.png"
+                              alt="Petabyte eSports Platform"
+                            />
+                          </a>
+                        </div>
+                        <div class="wrap">
+                          <div class="work-content">
+                            <div class="w-image">
+                              <a href="https://pesports.gg/" target="_blank">
+                                <img
+                                  loading="lazy"
+                                  width="468"
+                                  height="856"
+                                  src="assets/images/section/pesport.png"
+                                  alt="Petabyte eSports Platform"
+                                />
+                              </a>
+                            </div>
+                            <div class="content">
+                              <div class="content-top">
+                                <div class="w-logo">
+                                  <a
+                                    href="https://pesports.gg/"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      loading="lazy"
+                                      width="40"
+                                      height="40"
+                                      src="assets/images/logo/logo-2.png"
+                                      alt="Petabyte Logo"
+                                    />
+                                  </a>
+                                </div>
+                                <h4
+                                  class="w-title letter-space--2 text-white-72"
+                                >
+                                  Petabyte eSports
+                                </h4>
+                                <p class="w-desc text-white-56 text-body-3">
+                                  A complete gaming and investment platform
+                                  built from scratch featuring AI-driven
+                                  dashboards and interactive tournament
+                                  visualizations. Optimized for performance
+                                  across low-bandwidth mobile devices with
+                                  reduced load times and enhanced user
+                                  experience.
+                                </p>
+                                <div class="w-highlight">
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Year
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      2024
+                                    </p>
+                                  </div>
+                                  <div class="box-high">
+                                    <p class="text-body-3 text-white-56">
+                                      Load Time
+                                    </p>
+                                    <p class="text-body-1 text-white-72">
+                                      -27%
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="w-tag-list">
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >Gaming</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >React</span
+                                    >
+                                  </div>
+                                  <div class="tag">
+                                    <span
+                                      class="text-body-3 fw-medium text-white-72"
+                                      >AI Dashboards</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content-bottom">
+                                <div class="br-line"></div>
+                                <div class="group-action">
+                                  <a
+                                    href="https://pesports.gg/"
+                                    target="_blank"
+                                    class="tf-btn-action style-white"
+                                  >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                    <span
+                                      class="text text-body-3 letter-space--05 fw-medium"
+                                      >View Live</span
+                                    >
+                                    <span class="ic-wrap"
+                                      ><i class="icon icon-arrow-right-top"></i
+                                    ></span>
+                                  </a>
+                                  <p class="text-white-40">
+                                    <span class="text-white-72">01</span> / 05
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Projects Highlight -->
+
+                <!-- Blog Section -->
+                <div id="blog" class="section-service flat-spacing">
+                  <div
+                    class="sect-tag text-caption fw-medium effectFade fadeUp no-div mb-0"
+                  >
+                    <i class="icon icon-service"></i>
+                    Blog
+                  </div>
+                  <div class="" id="accordion-service">
+                    <div
+                      class="service-accordion_item scrolling-effect effectBottom"
+                      role="presentation"
+                    >
+                      <div
+                        class="accordion-action"
+                        data-bs-target="#blog-1"
+                        role="button"
+                        data-bs-toggle="collapse"
+                        aria-controls="blog-1"
+                        aria-expanded="true"
+                      >
+                        <a
+                          href="https://www.linkedin.com/posts/abdulazeezadeleye_uiux-frontenddevelopment-activity-7271810864507146241-s72_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                        >
+                          <h4 class="text letter-space--2 text-black-72">
+                            I've Led a Team of Developers and Designers, and
+                            This Is What I Can Say...
+                          </h4>
+                        </a>
+                        <div class="ic-wrap">
+                          <span class="ic-accordion-custom"></span>
+                        </div>
+                      </div>
+                      <div
+                        id="blog-1"
+                        class="collapse show"
+                        data-bs-parent="#accordion-service"
+                      >
+                        <div class="accordion-content">
+                          <div class="tf-grid-layout sm-col-2">
+                            <div class="service-image">
+                              <a
+                                href="https://www.linkedin.com/posts/abdulazeezadeleye_uiux-frontenddevelopment-activity-7271810864507146241-s72_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              >
+                                <div class="wrap_image">
+                                  <img
+                                    width="340"
+                                    height="200"
+                                    src="https://media.licdn.com/dms/image/v2/D4D22AQEFAPtDXCMGZA/feedshare-shrink_800/feedshare-shrink_800/0/1733699737878?e=1769040000&v=beta&t=LlRw7Y8UjHiMX59CJlcO-ANEKXJe82gf6xq7Gvyk_Ec"
+                                    alt="Performance Optimization"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+                          <p class="service-desc text-black-56">
+                            Leading a team of developers and designers isn't
+                            always smooth sailing—it can feel like navigating
+                            two different worlds. Designers focus on the vision,
+                            the aesthetic, the experience. Developers think in
+                            terms of logic, performance, and maintainability.
+                          </p>
+                          <br />
+
+                          <div class="service-tag">
+                            <a
+                              href="https://www.linkedin.com/posts/abdulazeezadeleye_uiux-frontenddevelopment-activity-7271810864507146241-s72_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              target="_blank"
+                              class="tf-btn-action"
+                            >
+                              <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                              </span>
+                              <span
+                                class="text text-body-3 letter-space--05 fw-medium"
+                              >
+                                Continue reading
+                              </span>
+                              <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="br-line scrolling-effect effectBottom"></div>
+                    <div
+                      class="service-accordion_item scrolling-effect effectBottom"
+                      role="presentation"
+                    >
+                      <div
+                        class="accordion-action collapsed"
+                        data-bs-target="#blog-2"
+                        role="button"
+                        data-bs-toggle="collapse"
+                        aria-controls="blog-2"
+                        aria-expanded="false"
+                      >
+                        <a
+                          href="https://www.linkedin.com/feed/update/urn:li:activity:7105470672990052353/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                          target="_blank"
+                        >
+                          <h4 class="text letter-space--2 text-black-72">
+                            Exploring Azure Methodologies for Frontend
+                            Developers!
+                          </h4>
+                        </a>
+                        <div class="ic-wrap">
+                          <span class="ic-accordion-custom"></span>
+                        </div>
+                      </div>
+                      <div
+                        id="blog-2"
+                        class="collapse"
+                        data-bs-parent="#accordion-service"
+                      >
+                        <div class="accordion-content">
+                          <div class="tf-grid-layout sm-col-2">
+                            <div class="service-image">
+                              <a
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:7105470672990052353/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              >
+                                <div class="wrap_image">
+                                  <img
+                                    width="340"
+                                    height="206"
+                                    src="https://media.licdn.com/dms/image/v2/D4D22AQEj_8KZQyRBzA/feedshare-shrink_800/feedshare-shrink_800/0/1694076221136?e=1769040000&v=beta&t=TdLVEqCECEJelGurxrkROOtVHM-kUxAYBtxdTgQ0zw0"
+                                    alt="React Architecture"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="service-image">
+                              <a
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:7105470672990052353/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              >
+                                <div class="wrap_image">
+                                  <img
+                                    width="340"
+                                    height="206"
+                                    src="https://media.licdn.com/dms/image/v2/D4D22AQGalgqpeXxCbw/feedshare-shrink_800/feedshare-shrink_800/0/1694076221135?e=1769040000&v=beta&t=H0tQTGHDCbZYL-jT88k-NwK-UqSXI0XVA4qpZsv1x6s"
+                                    alt="Next.js Optimization"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+                          <p class="service-desc text-black-56">
+                            Frontend development is an integral part of any web
+                            project, and leveraging the right methodologies is
+                            crucial for success. In this post, we delve into how
+                            Azure provides tailored methodologies to streamline
+                            the frontend development process...
+                          </p>
+                          <br />
+                          <div class="service-tag">
+                            <a
+                              href="https://www.linkedin.com/feed/update/urn:li:activity:7105470672990052353/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              target="_blank"
+                              class="tf-btn-action"
+                            >
+                              <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                              </span>
+                              <span
+                                class="text text-body-3 letter-space--05 fw-medium"
+                              >
+                                Continue reading
+                              </span>
+                              <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="br-line scrolling-effect effectBottom"></div>
+                    <div
+                      class="service-accordion_item scrolling-effect effectBottom"
+                      role="presentation"
+                    >
+                      <div
+                        class="accordion-action collapsed"
+                        data-bs-target="#blog-3"
+                        role="button"
+                        data-bs-toggle="collapse"
+                        aria-controls="blog-3"
+                        aria-expanded="false"
+                      >
+                        <a
+                          href="https://www.linkedin.com/posts/abdulazeezadeleye_i-once-lost-a-job-opportunity-because-i-couldnt-activity-7328732983702507521-VahT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                          target="_blank"
+                        >
+                          <h4 class="text letter-space--2 text-black-72">
+                            I once lost a job opportunity because I couldn't...
+                          </h4>
+                        </a>
+                        <div class="ic-wrap">
+                          <span class="ic-accordion-custom"></span>
+                        </div>
+                      </div>
+                      <div
+                        id="blog-3"
+                        class="collapse"
+                        data-bs-parent="#accordion-service"
+                      >
+                        <div class="accordion-content">
+                          <div class="tf-grid-layout sm-col-2">
+                            <div class="service-image">
+                              <a
+                                href="https://www.linkedin.com/posts/abdulazeezadeleye_i-once-lost-a-job-opportunity-because-i-couldnt-activity-7328732983702507521-VahT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              >
+                                <div class="wrap_image">
+                                  <img
+                                    width="340"
+                                    height="206"
+                                    src="https://media.licdn.com/dms/image/v2/D4D22AQHqHMPYNBM91Q/feedshare-shrink_800/B4DZbTjzTSH8Ag-/0/1747306103305?e=1769040000&v=beta&t=I_42mIQJKilcSHyDJgT1Z9-l85WrDf-RWlAbK3dsTgk"
+                                    alt="Payment Systems"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+                          <p class="service-desc text-black-56">
+                            I once lost a job opportunity because I couldn't
+                            clearly explain what a function, class, or object
+                            meant in technical terms. I knew what they did, and
+                            I had built real features with them. But when asked
+                            to define them, I defaulted to casual language...
+                          </p>
+                          <br />
+                          <div class="service-tag">
+                            <a
+                              href="https://www.linkedin.com/posts/abdulazeezadeleye_i-once-lost-a-job-opportunity-because-i-couldnt-activity-7328732983702507521-VahT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIzGmkBOdiYERhq9m13EHIYtfrSr4IPBoI"
+                              target="_blank"
+                              class="tf-btn-action"
+                            >
+                              <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                              </span>
+                              <span
+                                class="text text-body-3 letter-space--05 fw-medium"
+                              >
+                                Continue reading
+                              </span>
+                              <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Blog Section -->
+                <!-- /Blog Section -->
+
+                <!-- Contact -->
+                <div id="contact" class="section-contact flat-spacing">
+                  <div
+                    class="sect-tag text-caption fw-medium effectFade fadeUp no-div"
+                  >
+                    <i class="icon icon-send"></i>
+                    Contact
+                  </div>
+                  <h4
+                    class="s-title letter-space--2 split-text effect-blur-fade"
+                  >
+                    If you have an open position, a project inquiry
+                    <br class="d-none d-lg-block" />
+                    or technical collaboration opportunity,
+                    <br class="d-none d-lg-block" />
+                    Kindly reach out - Coffee's on me.
+                  </h4>
+
+                  <div class="social-horizontal">
+                    <h6 class="social-label text-body-1 text-black-56 mr-4">
+                      You can reach out faster using:
+                    </h6>
+
+                    <ul class="social-list-horizontal">
+                      <li class="social-item-horizontal">
+                        <a
+                          href="https://wa.me/2348109174125"
+                          class="social-link"
+                          aria-label="WhatsApp"
+                        >
+                          <img
+                            class="icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            src="assets/icon/whatsapp-glyph-black.svg"
+                            alt="WhatsApp"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item-horizontal">
+                        <a
+                          href="tel:+2348109174125"
+                          class="social-link"
+                          aria-label="LinkedIn"
+                        >
+                          <img
+                            class="icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            src="assets/icon/phone-calling-svgrepo-com.svg"
+                            alt="WhatsApp"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item-horizontal">
+                        <a
+                          href="mailto:message.abdulazeez@gmail.com"
+                          class="social-link"
+                          aria-label="Mail"
+                        >
+                          <img
+                            class="icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            src="assets/icon/mail-alt-3-svgrepo-com.svg"
+                            alt="Mail"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <br />
+                  <br />
+                  <form
+                    class="form-contact"
+                    id="contactform"
+                    action="./assets/contact/contact-process.php"
+                    method="post"
+                    novalidate="novalidate"
+                  >
+                    <div class="form-content effectFade fadeUp no-div">
+                      <fieldset class="field-ip">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Your Name *"
+                          required
+                        />
+                      </fieldset>
+                      <fieldset class="field-ip">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email *"
+                          required
+                        />
+                      </fieldset>
+                      <fieldset class="field-ip">
+                        <input
+                          type="text"
+                          name="company"
+                          id="company"
+                          placeholder="Company / Organization (if any)"
+                        />
+                      </fieldset>
+                      <fieldset class="field-ip">
+                        <input
+                          type="text"
+                          name="message"
+                          id="message"
+                          placeholder="How can I crender my expertise to your company or contribute to your project?"
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="form-action effectFade fadeUp no-div">
+                      <div class="send-wrap">
+                        <button
+                          type="submit"
+                          class="tf-btn animate-btn animate-dark"
+                        >
+                          <span class="text-body-3"> Send a Message </span>
+                        </button>
+                      </div>
+                      <p class="text-body-4 text-black-40 mt-3">
+                        <i>I'll get back to you within 2 hours.</i>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+                <!-- /Contact -->
+
+                <!-- Footer -->
+                <div id="footer" class="tf-footer flat-spacing">
+                  <div class="block-quote effectFade fadeUp no-div">
+                    <h5 class="quote-text font-3 fw-normal text-black-72">
+                      <span class="text-black-56">"</span>
+                      The function of good software is to make the complex
+                      appear to be simple.
+                      <span class="text-black-56">"</span>
+                    </h5>
+                    <p class="quote-author font-3 text-black-56 h6 text-end">
+                      Abdul-Azeez Adeleye
+                    </p>
+                  </div>
+                  <div class="br-line"></div>
+                  <div class="foot-inner">
+                    <div class="azeezadeleye effectFade fadeUp no-div">
+                      <a href="#home">
+                        <svg
+                          viewBox="0 0 354 160"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 157.225V6.93641H19.4068V157.225H0Z"
+                            fill="black"
+                            fill-opacity="0.72"
+                          />
+                          <path
+                            d="M85.0002 160C57.2763 160 36.9454 144.277 35.0971 123.006L55.428 117.457C56.3521 131.329 69.29 142.428 85.9243 142.428C98.8622 142.428 109.028 135.491 109.028 125.78C109.028 99.8844 40.6419 110.058 40.6419 71.2139C40.6419 52.2543 57.2763 38.8439 81.3037 38.8439C105.331 38.8439 123.121 52.0231 125.662 70.289L106.255 75.3757C105.793 64.0462 95.6277 55.9538 81.7658 55.9538C69.29 55.9538 60.5107 62.4277 60.5107 71.2139C60.5107 96.185 129.359 86.0116 129.359 125.78C129.359 145.665 110.876 160 85.0002 160Z"
+                            fill="black"
+                            fill-opacity="0.72"
+                          />
+                          <path
+                            d="M175.578 160C152.705 160 137.688 146.821 137.688 126.705C137.688 110.751 150.395 97.8035 170.033 94.3353L205.612 87.8613C209.54 87.1676 212.543 84.1618 212.543 80.4624C212.543 65.896 202.609 55.4913 188.516 55.4913C173.729 55.4913 162.64 66.1272 161.716 82.3121L141.385 80C143.695 55.9538 162.871 38.8439 187.591 38.8439C213.005 38.8439 231.026 56.6474 231.026 81.3873V134.104L231.488 157.225H216.702L213.467 139.653C206.305 152.139 192.443 160 175.578 160ZM158.019 125.78C158.019 135.491 166.336 141.965 179.274 141.965C198.681 141.965 212.543 128.555 212.543 110.058V101.965C210.464 102.428 207.922 103.121 205.15 103.584L174.654 109.133C164.488 110.983 158.019 117.457 158.019 125.78Z"
+                            fill="black"
+                            fill-opacity="0.72"
+                          />
+                          <path
+                            d="M330.897 157.225L292.083 104.277L271.752 126.243V157.225H253.27V0H271.752V101.04L324.428 41.6185H349.379L304.559 90.6358L354 157.225H330.897Z"
+                            fill="black"
+                            fill-opacity="0.72"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <a href="#home" class="f-logo effectFade fadeZoom">
+                      <div class="logo">
+                        <img
+                          class="image-switch"
+                          data-light="assets/images/logo/logo.png"
+                          data-dark="assets/images/logo/logo-2.png"
+                          loading="lazy"
+                          width="32"
+                          height="32"
+                          src="assets/images/logo/logo.png"
+                          alt="Abdul-Azeez Logo"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="foot-bottom">
+                    <p
+                      class="text-nocopy text-black-56 effectFade fadeUp no-div"
+                    >
+                      All rights reserved <br />
+                      © <span id="currentYear"></span> Abdul-Azeez Adeleye
+                    </p>
+
+                    <script>
+                      // Simple year update
+                      document.getElementById("currentYear").textContent =
+                        new Date().getFullYear();
+                    </script>
+                    <div class="azeezadeleye effectFade fadeUp no-div">
+                      <a href="#home">
+                        <svg
+                          viewBox="0 0 428 162"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M267.304 41.4092C233.789 41.4092 209.924 66.4273 209.924 101.454C209.924 136.481 233.789 161.5 267.304 161.5C300.819 161.5 324.683 136.481 324.683 101.454C324.682 66.4274 300.819 41.4094 267.304 41.4092ZM57.8799 41.4092C24.3648 41.4092 0.500204 66.4273 0.5 101.454C0.5 136.481 24.3647 161.5 57.8799 161.5C91.395 161.5 115.259 136.481 115.259 101.454C115.259 66.4274 91.3948 41.4093 57.8799 41.4092ZM326.392 10.0459V29.2275H407.389V76.8633H334.582V96.0459H407.389V158.772H427.5V10.0459H326.392ZM174.328 3.22754V158.772H193.529V3.22754H174.328ZM131.553 44.1367V158.772H150.754V44.1367H131.553ZM267.304 60.1367C289.049 60.1369 304.571 77.3623 304.571 101.454C304.571 125.313 289.054 142.318 267.304 142.318C245.553 142.318 230.035 125.313 230.035 101.454C230.035 77.3622 245.558 60.1367 267.304 60.1367ZM57.8799 60.1367C79.6252 60.1368 95.1473 77.3623 95.1475 101.454C95.1475 125.313 79.6305 142.318 57.8799 142.318C36.1291 142.318 20.6113 125.313 20.6113 101.454C20.6115 77.3622 36.1344 60.1367 57.8799 60.1367ZM141.153 0.5C132.671 0.5 126.547 6.87608 126.547 15.5459C126.547 24.2155 132.671 30.5908 141.153 30.5908C149.635 30.5907 155.76 24.2154 155.76 15.5459C155.76 6.87613 149.635 0.500076 141.153 0.5Z"
+                            stroke="black"
+                            stroke-opacity="0.56"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Footer -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery-validate.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="assets/js/odometer.min.js"></script> -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/infinityslide.js"></script>
+    <script src="assets/js/ScrollSmooth.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/gsapAnimation.js"></script>
+
+    <script src="assets/js/countto.js"></script>
+
+    <script src="assets/js/animation-change-text.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
