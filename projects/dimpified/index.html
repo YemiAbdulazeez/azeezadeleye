@@ -30,10 +30,10 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css" />
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.ico" />
     <link
       rel="apple-touch-icon-precomposed"
-      href="../../assets/images/logo/favicon.png"
+      href="../../assets/images/logo/favicon.ico"
     />
   </head>
 
@@ -913,7 +913,7 @@
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
-                            src="assets/icon/whatsapp-glyph-black.svg"
+                            src="../../assets/icon/whatsapp-glyph-black.svg"
                             alt="WhatsApp"
                           />
                         </a>
@@ -929,7 +929,7 @@
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
-                            src="assets/icon/phone-calling-svgrepo-com.svg"
+                            src="../../assets/icon/phone-calling-svgrepo-com.svg"
                             alt="WhatsApp"
                           />
                         </a>
@@ -945,7 +945,7 @@
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
-                            src="assets/icon/mail-alt-3-svgrepo-com.svg"
+                            src="../../assets/icon/mail-alt-3-svgrepo-com.svg"
                             alt="Mail"
                           />
                         </a>
@@ -957,7 +957,7 @@
                   <form
                     class="form-contact"
                     id="contactform"
-                    action="./assets/contact/contact-process.php"
+                    action="../../contact-form.php"
                     method="post"
                     novalidate="novalidate"
                   >
@@ -993,7 +993,7 @@
                           type="text"
                           name="message"
                           id="message"
-                          placeholder="How can I crender my expertise to your company or contribute to your project?"
+                          placeholder="How can I render my expertise to your company or contribute to your project?"
                         />
                       </fieldset>
                     </div>
@@ -1066,12 +1066,12 @@
                       <div class="logo">
                         <img
                           class="image-switch"
-                          data-light="assets/images/logo/logo.png"
-                          data-dark="assets/images/logo/logo-2.png"
+                          data-light="../../assets/images/logo/logo.png"
+                          data-dark="../../assets/images/logo/logo-2.png"
                           loading="lazy"
                           width="32"
                           height="32"
-                          src="assets/images/logo/logo.png"
+                          src="../../assets/images/logo/logo.png"
                           alt="Abdul-Azeez Logo"
                         />
                       </div>
@@ -1116,6 +1116,77 @@
     </main>
 
     <!-- Javascript -->
+
+    <script>
+      // Handle form submission status
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get("status");
+        const form = document.getElementById("contactform");
+
+        if (form) {
+          if (status === "success") {
+            // Show success message
+            const successMessage = document.createElement("div");
+            successMessage.className = "alert alert-success text-body-3 mb-4";
+            successMessage.innerHTML = `
+                <strong>✓ Message sent successfully!</strong><br>
+                I've received your message and will get back to you within 2 hours.
+                Check your email for the auto-reply confirmation.
+            `;
+            form.parentNode.insertBefore(successMessage, form);
+
+            // Optional: Reset form
+            form.reset();
+
+            // Remove success parameter from URL
+            history.replaceState({}, document.title, window.location.pathname);
+          } else if (
+            status === "error" ||
+            status === "validation_error" ||
+            status === "invalid_request"
+          ) {
+            // Show error message
+            const errorMessage = document.createElement("div");
+            errorMessage.className = "alert alert-error text-body-3 mb-4";
+            errorMessage.innerHTML = `
+                <strong>⚠️ Something went wrong!</strong><br>
+                Please try again or contact me directly at message.abdulazeez@gmail.com
+            `;
+            form.parentNode.insertBefore(errorMessage, form);
+
+            // Remove error parameter from URL
+            history.replaceState({}, document.title, window.location.pathname);
+          }
+
+          // Optional: Form submission with AJAX for better UX
+          form.addEventListener("submit", function (e) {
+            // You could add AJAX submission here
+            // But keep the current action as fallback
+          });
+        }
+      });
+    </script>
+
+    <!-- Optional: Add some CSS for alerts -->
+    <style>
+      .alert {
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        border: 1px solid transparent;
+      }
+      .alert-success {
+        background-color: #d1e7dd;
+        color: #0f5132;
+        border-color: #badbcc;
+      }
+      .alert-error {
+        background-color: #f8d7da;
+        color: #842029;
+        border-color: #f5c2c7;
+      }
+    </style>
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/jquery.nice-select.min.js"></script>
